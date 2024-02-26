@@ -1,0 +1,15 @@
+.acoustic-header {
+    max-width: 960px;
+    margin: 0 auto;
+    border-bottom: 1px solid rgb(231, 235, 238);
+}
+
+.acoustic-article {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.acoustic-article h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(19, 23, 61);
+}
