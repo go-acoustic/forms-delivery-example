@@ -1,37 +1,73 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
 <head>
-
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<title>Forms delivery example</title>
-
-    <link rel="stylesheet" href="./style.css">
-
-	<script src="https://content-us-1-qa.content-cms.com/20313e70-9866-44fa-bef1-8c3bd17770e5/acoustic/form/scripts/embedForm.js"></script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Acoustic forms</title>
+    <meta name="description" content="Acoustic forms">
+    <link rel="icon" href="assets/images/acoustic-logo.inline.mignight-blue.svg" sizes="32x32" type="image/png">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://content-us-1-qa.content-cms.com/20313e70-9866-44fa-bef1-8c3bd17770e5/acoustic/form/scripts/embedForm.js"></script>
 </head>
 
 <body>
-    <header>
-        <div class="acoustic-header">
-            <img alt="Acoustic logo" fetchpriority="high" width="140" height="80" style="color:transparent" src="./assets/images/acoustic-logo.inline.mignight-blue.svg">
-        </div>
-    </header>
-    
-    <main>
-        <article class="acoustic-article">
-            <h1>Example for embeded form delivery</h1>
-            <p>Below you can see a form that is integrated into the website with the help of <code>&lt;embed-form&gt;</code> tag</p>
-            <embed-form src="https://content-us-1-qa.content-cms.com/api/20313e70-9866-44fa-bef1-8c3bd17770e5/forms/547641401108242432"></embed-form>
-        </article>
-    </main>
-    
-    <footer>
 
-    </footer>
+    <div class="jumbotron jumbotron-fluid" id="banner" style="background-image: url(assets/images/banner-bk.jpg);">
+        <div class="container text-center text-md-left">
+            <header>
+                <div class="row justify-content-between">
+                    <div class="col-2">
+                        <img src="assets/images/acoustic-logo.inline.mignight-blue.svg" alt="logo">
+                    </div>
+                </div>
+            </header>
+            <h1 class="display-3 text-white font-weight-bold my-5">
+            	A new way<br>
+            	of embeding a form.
+            </h1>
+            <p class="lead text-white my-4">
+                Below you can see a form that is integrated into the website with the help of <code>&lt;embed-form&gt;</code> tag.
+            </p>
+            <a href="#" onclick="var element = document.getElementById('form-delivery'); element.scrollIntoView({behavior: 'smooth'});" class="btn my-4 font-weight-bold atlas-cta cta-green">Get Started</a>
+        </div>
+    </div>
+
+    <div class="container my-5 py-2" id="form-delivery">
+        <h2 class="text-center font-weight-bold my-5">Example for embeded form delivery</h2>
+        <div>
+            <embed-form src="https://content-us-1-qa.content-cms.com/api/20313e70-9866-44fa-bef1-8c3bd17770e5/forms/547641401108242432"></embed-form>
+        </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid" id="contact" style="background-image: url(assets/images/contact-bk.jpg);">
+        <div class="container my-5">
+            <div class="row justify-content-between">
+                <div class="col-md-6 text-white">
+                    <h2 class="font-weight-bold">Contact Us</h2>
+                    <p class="my-4">
+                        Get help from our Customer Support team.
+                        <br> We have answers to your questions.
+                    </p>
+                    <ul class="list-unstyled">
+                        <li>Email : partners@acoustic.com</li>
+                        <li>Phone : +1 866-820-5136 (US) +44 808-169-2386 (U.K.)</li>
+                        <li>Address : Acoustic</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<div class="jumbotron jumbotron-fluid" id="copyright">
+        <div class="container">
+            <div class="row justify-content-between">
+            	<div class="col-md-6 text-white align-self-center text-center text-md-left my-2">
+                    Copyright © 2024 Acoustic
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
